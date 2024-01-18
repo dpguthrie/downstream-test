@@ -11,7 +11,7 @@ select
     day_visited,
     context_locale,
     src,
-    link[1] as link,
+    link[1]::string as link,
     count(*) as total_clicks
 from source
 group by 1, 2, 3, 4
