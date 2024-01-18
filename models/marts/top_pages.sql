@@ -16,6 +16,6 @@ select
     context_locale,
     src,
     actual_page,
-    count(*)
+    count(*) as total_visits
 from source
 group by 1, 2, 3, 4
